@@ -8,7 +8,7 @@
 
 ---
 
-## Screenshot
+## Visuals
 
 ![Signet App](./client/public/signet.png)
 
