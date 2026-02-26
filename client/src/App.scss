@@ -461,6 +461,22 @@ button, .button, input[type="submit"] {
   }
 }
 
+// ─── Server wake-up banner ────────────────────────────────────────────────────
+.server-banner {
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 0.78rem;
+  color: $text-muted;
+  background: $surface;
+  border-bottom: 1px solid $border;
+
+  &--slow {
+    color: $text-dim;
+    background: rgba(20, 184, 166, 0.06);
+    border-bottom-color: rgba(20, 184, 166, 0.2);
+  }
+}
+
 // ─── Footer ───────────────────────────────────────────────────────────────────
 .app-footer {
   margin-top: auto;

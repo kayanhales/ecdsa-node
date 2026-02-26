@@ -10,9 +10,20 @@ function App() {
   const [privateKey, setPrivateKey] = useState("");
   const [accounts, setAccounts] = useState([]);
   const [transactions, setTransactions] = useState([]);
+  const [serverStatus, setServerStatus] = useState("loading"); // loading | slow | awake
 
   useEffect(() => {
-    server.get("accounts").then(({ data }) => setAccounts(data));
+    const slowTimer = setTimeout(() => {
+      setServerStatus((s) => s === "loading" ? "slow" : s);
+    }, 3000);
+
+    server.get("accounts").then(({ data }) => {
+      clearTimeout(slowTimer);
+      setAccounts(data);
+      setServerStatus("awake");
+    });
+
+    return () => clearTimeout(slowTimer);
   }, []);
 
   function resetWallet() {
@@ -32,6 +43,14 @@ function App() {
         <h1>Signet</h1>
         <span className="tagline">Sign it. Send it. Done. ECDSA-secured.</span>
       </header>
+
+      {serverStatus !== "awake" && (
+        <div className={`server-banner ${serverStatus === "slow" ? "server-banner--slow" : ""}`}>
+          {serverStatus === "slow"
+            ? "⏳ Server is waking up from sleep — this may take ~30 seconds. Hang tight!"
+            : "Connecting to server…"}
+        </div>
+      )}
 
       <div className="app">
         <Wallet
