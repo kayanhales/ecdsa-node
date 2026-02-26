@@ -2,6 +2,8 @@
 
 **Signet** is a browser-based crypto payment app built on top of Elliptic Curve Digital Signatures (ECDSA). Every transfer is cryptographically signed in the browser — your private key never leaves your device.
 
+**[Live Demo →](https://signet-ecdsa.vercel.app)**
+
 > Built as part of **Week 1** of the [Intro to Ethereum Bootcamp](https://university.alchemy.com/) on **Alchemy University**.
 
 > ⚠️ **Demo only.** This is a teaching project and is not intended for production use. Private keys are stored in browser memory, balances are in-memory only (not persisted), and there is no authentication layer. Use for learning and demonstration purposes only.
