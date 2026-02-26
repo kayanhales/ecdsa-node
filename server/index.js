@@ -7,7 +7,7 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 const cors = require("cors");
-const port = 3042;
+const port = process.env.PORT || 3042;
 
 const { generateKeyPair } = require("./scripts/generateKeys");
 
