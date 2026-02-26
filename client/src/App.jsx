@@ -60,6 +60,10 @@ function App() {
         <a href="https://github.com/kayanhales" target="_blank" rel="noreferrer">
           github.com/kayanhales
         </a>
+        <span className="footer-dot">·</span>
+        <a href="https://github.com/kayanhales/ecdsa-node" target="_blank" rel="noreferrer">
+          view repo
+        </a>
       </footer>
     </div>
   );
