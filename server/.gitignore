@@ -1,2 +1,5 @@
 !.gitignore
 node_modules
+test-keys.json
+index_bkup.js
+index_wallet_address_working_bkup.js
