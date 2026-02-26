@@ -53,6 +53,14 @@ function App() {
           />
         )}
       </div>
+
+      <footer className="app-footer">
+        <span>Built by a mom in tech</span>
+        <span className="footer-dot">·</span>
+        <a href="https://github.com/kayanhales" target="_blank" rel="noreferrer">
+          github.com/kayanhales
+        </a>
+      </footer>
     </div>
   );
 }
