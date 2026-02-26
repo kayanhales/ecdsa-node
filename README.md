@@ -2,15 +2,15 @@
 
 **Signet** is a browser-based crypto payment app built on top of Elliptic Curve Digital Signatures (ECDSA). Every transfer is cryptographically signed in the browser — your private key never leaves your device.
 
-**[Live Demo → signet-ecdsa.vercel.app](https://signet-ecdsa.vercel.app)**
-
 > Built as part of **Week 1** of the [Intro to Ethereum Bootcamp](https://university.alchemy.com/) on **Alchemy University**.
 
 > ⚠️ **Demo only.** This is a teaching project and is not intended for production use. Private keys are stored in browser memory, balances are in-memory only (not persisted), and there is no authentication layer. Use for learning and demonstration purposes only.
 
 ---
 
-## Visuals
+## Demo
+
+**[Live Demo → signet-ecdsa.vercel.app](https://signet-ecdsa.vercel.app)**
 
 ![Signet App](./client/public/signet.png)
 
@@ -54,12 +54,12 @@ cd ecdsa-node
 ```bash
 cd server
 npm install
-node index.js
+node index
 ```
 
 The server runs on `http://localhost:3042`.
 
-> Tip: install `nodemon` (`npm i -g nodemon`) and use `nodemon index.js` to auto-restart on file changes.
+> Tip: install `nodemon` (`npm i -g nodemon`) and use `nodemon index` to auto-restart on file changes.
 
 ### 3. Start the client
 
@@ -72,6 +72,19 @@ npm run dev
 ```
 
 Visit `http://localhost:5173` in your browser.
+
+---
+
+## Deployment
+
+The live demo is hosted across two free services:
+
+| Service | Role | URL |
+|---|---|---|
+| [Vercel](https://vercel.com) | Frontend (React/Vite) | [signet-ecdsa.vercel.app](https://signet-ecdsa.vercel.app) |
+| [Render](https://render.com) | Backend (Node/Express) | — |
+
+> Note: Render's free tier spins down after 15 minutes of inactivity. The first request after idle may take ~30 seconds to wake up.
 
 ---
 
