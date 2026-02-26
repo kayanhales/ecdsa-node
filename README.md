@@ -10,7 +10,7 @@
 
 ## Demo
 
-**[Live Demo → signet-ecdsa.vercel.app](https://signet-ecdsa.vercel.app)**
+**[Live Demo → signet-ecdsa.vercel.app](https://signet-ecdsa.vercel.app)** — built by a mom in tech · [github.com/kayanhales](https://github.com/kayanhales)
 
 ![Signet App](./client/public/signet.png)
 
