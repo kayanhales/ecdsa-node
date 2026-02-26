@@ -4,6 +4,8 @@
 
 > Built as part of **Week 1** of the [Intro to Ethereum Bootcamp](https://university.alchemy.com/) on **Alchemy University**.
 
+> ⚠️ **Demo only.** This is a teaching project and is not intended for production use. Private keys are stored in browser memory, balances are in-memory only (not persisted), and there is no authentication layer. Use for learning and demonstration purposes only.
+
 ---
 
 ## Screenshot
